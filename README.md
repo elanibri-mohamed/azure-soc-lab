@@ -14,17 +14,7 @@ Most portfolio security labs rely on simulated or staged attacks. This one doesn
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[Internet Attackers] -->|SSH brute force| B[Azure VM - LinuxVM]
-    B -->|Syslog via AMA| C[Log Analytics Workspace]
-    C --> D[Microsoft Sentinel]
-    D -->|KQL Analytics Rule| E[Incident Created]
-    E -->|Automation Rule| F[Logic App Playbook]
-    F --> G[Entities - Get IPs]
-    G --> H[Send Email Alert]
-    I[Microsoft Defender for Cloud] -.->|Monitors misconfig| B
-```
+![Lab architecture](images/azure_soc_lab_architecture.png)
 
 **Components:**
 - **Compute:** Azure VM (Ubuntu Server, B1s free tier)
