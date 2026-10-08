@@ -102,7 +102,7 @@ Defender for Cloud's Secure Score and recommendations were used to validate the 
 
 The SSH/management-ports exposure finding dropped out of the unresolved recommendations list once the NSG rule was restricted, and Secure Score improved accordingly.
 
-Multi-factor authentication was also enabled on the Azure account, and a $5 cost budget alert was configured from the start to keep the entire project within Azure's free-tier allowances.
+Multi-factor authentication was also enabled on the Azure account, and a $20 cost budget alert was configured from the start to keep the entire project within Azure's free-tier allowances.
 
 ![Cost budget](images/cost-budget.png)
 
