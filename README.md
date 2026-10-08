@@ -47,7 +47,7 @@ An incident is automatically created whenever 5 or more failed logins from a sin
 
 ## Real-world finding
 
-Within hours of the VM going live, it was attacked by **six distinct unsolicited source IPs** — confirming that unmonitored, internet-facing SSH access is attacked essentially immediately in the wild, with no targeting or staging required.
+Within hours of the VM going live, it was attacked by **several( more than 12) distinct unsolicited source IPs** — confirming that unmonitored, internet-facing SSH access is attacked essentially immediately in the wild, with no targeting or staging required.
 
 ```kql
 Syslog
